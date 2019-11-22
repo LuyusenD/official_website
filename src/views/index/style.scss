@@ -4,9 +4,10 @@ a{text-decoration: none;}
 .w-104{width: 104px;}
 #box{min-width: 1366px;
   .setColor-nav{background: #002b2f;height: 36px;
-    .nav{display:flex; align-items: center;height: 36px;color: #fff;font-size: 14px;font-weight: 600;
+    .nav{display:flex; align-items: center;height: 36px;color: #fff;font-size: 14px;font-weight: 600;overflow: hidden;
       img{width: 17px;height: 17px; margin-right: 10px}
       img.location{margin-left: 20px;}
+      button{border:0px;background: #002b2f;color: #fff;font-size: 14px;margin-left: 20px}
     }
   }
   .setColor-title{font-weight: 600;height: 180px;
@@ -55,8 +56,8 @@ a{text-decoration: none;}
   .setColor-cn{height:707px;background:#f8f8f9;
     .cn{height:707px;text-align: center;
       .title{text-align:center;height: 165px;
-        span{position:relative;top: 75px;color: #1f365c;font-size: 40px;
-          &:after{position: absolute;z-index:1px; width: 200px;height:5px;background:#ffb536;left: 40px;top: 60px;content: '';}
+        span{position:relative;top:75px;color: #1f365c;font-size: 40px;
+          
         }
       }
     }
@@ -136,7 +137,7 @@ a{text-decoration: none;}
     .cn{width: 716px;height:666px;text-align: center;
       .title{text-align:center;height: 165px;
         span{position:relative;top: 75px;color: #1f365c;font-size: 40px;
-          &:after{position: absolute;z-index:1px; width: 130px;height:5px;background:#ffb536;left: 15px;top: 60px;content: '';}
+          
         }
       }
       h5{color:#aaa;margin-top:20px;}
@@ -200,12 +201,17 @@ a{text-decoration: none;}
         }
       }
     }
-    .setColor-cn{height:707px;background:#f8f8f9;
-      .cn{height:707px;text-align: center;
+    .setColor-cn{height:auto;background:#f8f8f9;
+      .cn{height:auto;text-align: center;
         .title{text-align:center;height: 165px;
           span{position:relative;top: 75px;color: #1f365c;font-size: 40px;
-            &:after{position: absolute;z-index:1px; width: 200px;height:5px;background:#ffb536;left: 40px;top: 60px;content: '';}
+            
           }
+        }
+        .commitment{overflow:hidden;background: rgb(248,248,249);
+          img{width: 100%;}
+          img:nth-child(1){margin-left: 17px;}
+          img:nth-child(3){margin-left: -30px;}
         }
       }
     }
@@ -284,7 +290,7 @@ a{text-decoration: none;}
       .cn{width: 716px;height:666px;text-align: center;
         .title{text-align:center;height: 165px;
           span{position:relative;top: 75px;color: #1f365c;font-size: 40px;
-            &:after{position: absolute;z-index:1px; width: 130px;height:5px;background:#ffb536;left: 15px;top: 60px;content: '';}
+            
           }
         }
         h5{color:#aaa;margin-top:20px;}
@@ -297,13 +303,13 @@ a{text-decoration: none;}
         }
       }
     }
-    .foot{width: 100%;height: 250px;background:#002b2f;display:flex;justify-content: center;padding: 60px 0 25px;
-      div.logo{width: 300px;
+    .foot{width: 100%;height: 500px;background:#002b2f;display:flex;justify-content: center;padding: 60px 0 25px;align-items: center;flex-direction: column;
+      div.logo{width: 300px;text-align: center;
         img{width: 177px;}
         p{color:#fff;margin: 20px 0; }
-        a{width: 90px;height: 30px;display:block;text-align:center;line-height: 30px;color:#fff;background:#ffb536;}
+        a{margin: 0 auto;width: 90px;height: 30px;display:block;text-align:center;line-height: 30px;color:#fff;background:#ffb536;}
       }
-      div.cont{width: 300px;
+      div.cont{width: 300px; text-align: center;
         p{color:#fff;margin: 10px 0;
           span{color:#666;}
         }
@@ -311,3 +317,13 @@ a{text-decoration: none;}
     }
   }
 }
+// .about{color:red;width: 100%;
+//   table{margin: 0px auto;padding-top: 100px;height: 260px;font-size: 24px;
+//     tr:first-child{font-size: 40px}
+//     tr{td:first-child{text-align: right}}
+//     button{width: 50%;height:24px;border: 0px;background-color:red;color:#fff;}
+//     button:focus{outline:none;}
+//     input{width:50%;height:28px;border:1px solid red;font-size: 24px;color: red;}
+//     input:focus{outline:none;}
+//   }
+// }
